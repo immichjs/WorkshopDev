@@ -1,0 +1,26 @@
+body {
+    background: #e5e5e5;
+    color: #25282B;
+    text-align: center;
+}
+
+button {
+    color: #ff5E84;
+    border: none;
+    font-weight: bold;
+    background: none;
+}
+
+.seeIdea {
+    background: #ff5E84;
+    color: #fff;
+}
+
+#footer a {
+    color: #25282B;
+    text-decoration: none;
+}
+
+#footer.hide {
+    display: none;
+}
