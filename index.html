@@ -1,34 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,900;1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Casa Criativa</title>
 </head>
 <body>
-    <img src="logo.png" alt="Logo Casa Criativa"/>
+    <div id="container">
+        <section id="intro">
+            <header>
+                <img src="logo.png" alt="Logo Casa Criativa">
+            </header>
 
-    <p>Ficar em casa em períodos longos, não deve ser nada fácil.</p>
-    <p> Iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo que for
-        necessário para tornar esse momento mais interessante.</p>
-    <p>Comece clicando em ver ideias para ver as  ideias cadastradas e contribua adicioando a sua ideia.</p>
-    
-    <button>+ Adicionar Ideia</button>
-    <button class="seeIdea">Ver Ideias</button>
+            <main>
+                <p>Ficar em casa em períodos longos, não deve ser nada fácil.</p>
+                <p> Iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo que for
+                    necessário para tornar esse momento mais interessante.</p>
+                <p>Comece clicando em ver ideias para ver as  ideias cadastradas e contribua adicioando a sua ideia.</p>
+            </main>
 
-    <p id="footer">Com ♥️ <a href="http://rocketseat.com.br">Rocketseat</a></p>
+            <section id="buttons">
+                <button>+ Adicionar Ideia</button>
+                <button class="seeIdea">Ver Ideias</button>
+            </section>
 
-    <script>
-        document
-            .querySelector('button.seeIdea')
-            .addEventListener('click', () => {
-                document
-                    .querySelector('#footer')
-                    .classList
-                    .toggle('hide')
-            })
+            <footer>
+                <p id="footer">Com ♥️ <a href="http://rocketseat.com.br">Rocketseat</a></p>
+            </footer>
+        </section>
 
-    </script>
+        <section id="last-idea">
+            <div class="idea">
+                <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" alt="Imagem de curso de programação">
+                <div class="content">
+                    <h3>Cursos de Programação</h3>
+                    <p>Estudo</p>
+                    <div class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+                    <a href="#">Ir para a ideia</a>
+                </div>
+            </div>
+            <div class="idea">
+                <img src="https://image.flaticon.com/icons/svg/2729/2729005.svg" alt="Imagem de exercícios">
+                <div class="content">
+                    <h3>Exercícios</h3>
+                    <p>Saude</p>
+                    <div class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+                    <a href="#">Ir para a ideia</a>
+                </div>
+            </div>
+            <div class="idea">
+                <img src="https://image.flaticon.com/icons/svg/2729/2729027.svg" alt="Imagem de meditação">
+                <div class="content">
+                    <h3>Meditação</h3>
+                    <p>Mentalidade</p>
+                    <div class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+                    <a href="#">Ir para a ideia</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
